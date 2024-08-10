@@ -1,22 +1,25 @@
 {
   "name": "chatgpt_clone",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "Server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon Server.js",
-    "start": "node server.js"
+    "start": "node Server.js",
+    "client": "npm run dev --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Abdulvahab Shaikh",
   "license": "MIT",
-  "description": "chat got clone",
+  "description": "chatgpt clone",
   "keywords": [],
   "dependencies": {
+    "@mui/material": "^5.16.6",
     "bcryptjs": "^2.4.3",
-    "body-parse": "^0.1.0",
     "body-parser": "^1.20.2",
     "bun": "^1.1.21",
     "colors": "^1.4.0",
+    "concurrently": "^8.2.2",
     "cookie": "^0.6.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
@@ -24,6 +27,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.5.2",
     "morgan": "^1.10.0",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "react-hot-toast": "^2.4.1"
   }
 }
