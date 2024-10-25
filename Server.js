@@ -12,6 +12,7 @@ const errorHandler = require("./middleware/errorMiddleware");
 // routes path
 const authRoutes = require("./routes/authRoutes");
 // Load environment variables
+
 dotenv.config();
 
 //MongoDb Connect

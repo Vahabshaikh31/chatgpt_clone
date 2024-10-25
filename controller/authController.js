@@ -27,7 +27,6 @@ exports.registerController = async (req, res, next) => {
 };
 
 //login function
-
 exports.loginController = async (req, res, next) => {
   try {
     const { email, password } = res.body;
